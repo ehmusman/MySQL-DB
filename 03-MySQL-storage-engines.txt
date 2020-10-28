@@ -1,0 +1,80 @@
+What is a storage engine ?
+
+A storage engine is what MySQL uses to store, handle and retreive data from a database table.
+
+    there are 10 storage engines in MySQL but all of them may not be available in certain situations. The most popular are MyISAM and InnoDB. 
+
+    MyISAM was a default storage engine untill MySQL 5.5.5 released. Now InnoDB is default.
+
+    mysql> show engines, will show you a supported engines.
+
+----------------------------------------------------------------------
+
+Standard Storage engines 
+>> MYISAM
+>> InnoDB 
+>> MERGE 
+>> MEMORY (HEAP)
+>> BDB(BerkeleyDB)
+>> EXAMPLE
+>> Archive 
+>> CSV 
+>> Blackhole
+>> ISAM
+
+--------------------------------------------------------------------------
+
+Storage Engine Benefits
+
+some of the reasons that you may want to use a certain storage engine.
+
+>> amount of data 
+>> Speed and performance 
+>> functionality
+>> Max Number of rows
+>> Data Integrity
+
+---------------------------------------------------------------------------
+
+When and Where to Choose 
+
+you can select a specific storage engine for a database as well as individual tables.
+
+example 
+CREATE TABLE table 1 (i INT) ENGINE = INNODB 
+CREATE TABLE table 2 (i INT) ENGINE = CSV 
+
+        we can use different engines to manages different tables.
+    
+    we can set the default storage engine to be used during the current session by setting the 
+    "default_storage_engine" Variable:
+
+    SET default_storage_engine = MYISAM;
+
+----------------------------------------------------------------------------------
+
+MYISAM Storage engine 
+>>this is based on the older (and no longer available) ISAM storage engine but has many usefull     extensions and features.
+>> MYISAM support full text search engine.
+>> No data cache.
+>> Index cashes- NO 
+>> Uses Table level locking (InnoDB use row level locking )
+
+>> MYISAM type is great for sites that have a very low Insert/Update rate and a very High Select Rate.
+
+--------------------------------------------------------------------------------
+
+InnoDB Storage Engine.
+
+>> Innodb offers a lot more features than MYISAM that increase performance.
+>> it uses row level locking which has better performancs than table level locking.
+>> InnoDB allows parallel INSERT/UPDATE/DELETE queries to be ran on the same table, unlike MyISAM where each query has to wait its turn to run.
+>> InnoDB supports foreign key functionality which is a huge advantage.
+
+---------------------------------------------------------------------------------------
+
+
+
+
+
+
