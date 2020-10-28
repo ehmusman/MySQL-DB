@@ -1,2 +1,21 @@
-sudo apt-get install mysql-server 
+sudo apt-get install mysql-server  
+    // to install mysql server
 sudo apt-get install mysql-client 
+    // to install mysql client to interact with database 
+sudo apt-get install php libapache2-mod-php     
+    //install php module
+
+sudo mysql -u root -p
+    // to enter in mysql
+
+commands,
+>> show databases
+>> use database_name
+>> exit 
+    // to leave the mysql
+
+
+>> sudo /etc/init.d/mysql stop
+    to stop mysql server
+>> sudo /etc/init.d/mysql start 
+    to start mysql server 
