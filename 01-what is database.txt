@@ -1,0 +1,89 @@
+What is DataBase?
+Database is an ordered collection of data
+a simple notepad file can also be a flat data base.
+most of people think database is combination of following three things
+
+
+1- The Data
+2- The Database Management System(DBMS like MySQL is, PostgreeSQL, Mongodb)
+3- Database Application(PHP My Admins, MySQL WorkBench are the interfaces to interact with data in the database)
+
+
+---------------------------------------------------
+What is DBMS
+DBMS is a software that is designed to modal data and provide interaction with a user.
+its may used with a command line or with GUI tools(PHP My Admin).
+
+>> Data is normally stored in one or more files.
+>> Data is usually stored in tables.
+>> Tables contain rows and columns much like a spreadsheet
+>> Data can be cross referenced among tables. This functionality is used in "Relational Database" such as MySQL.
+
+
+Here are some popular DBMS's
+
+>> MySQL
+>> PostgreSQL
+>> SQlite
+>> Microsoft SQL Server 
+>> Oracle
+>> SAP 
+>> FoxPro
+>> dBASE 
+>> Mariadb
+
+    Simple Example of DB 
+
+
+1- Database Name: MyStore
+2- Table Name 
+3- Columns/Fields: id,firstName,lastName,email
+4- Rows/Records: No. of users.
+
+-------------------------------------------------------------
+
+Interacting with a database
+
+when we install MySQL which is a database server we use clients to interact with it whether it is locally or remotely. 
+
+>> some common functions when working with a database 
+1- Define 
+2- Create 
+3- Select 
+4- Query 
+5- Update 
+6- Delete
+
+we can doo all these with a single field, a clump of fields or with tables, 
+
+---------------------------------------------------------------
+
+What is SQL?
+
+SQL Stands for Structured Querry Language
+it is a special purpose language that allows the developer to interact with the data in tha database 
+
+>> it is based on relational algebra and tuple relational calculus
+>> Data defination and data manipulation languages.
+>> can perform CRUD(Create, Read, Updata, Delete)
+
+-------------------------------------------------------------
+
+Common Database Models
+
+>> Relational Database(MySQL)
+>> Object Oriented Database
+>> Object Relational Database 
+>> Distributed Database 
+>> NoSQL Database(MongoDB)
+>> Multimedia database (to hold videos, images and all stuff like that)
+>> Flat Database  (just a file with data in it)
+>> Network Database 
+>> Hierarchical Database 
+
+We'll focus on the Relational Database
+-----------------------------------------------------------------
+
+
+
+
