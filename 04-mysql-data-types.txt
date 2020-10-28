@@ -1,0 +1,73 @@
+3 categories
+
+MySQL Offers many data types but places those data types into three categories.
+
+1- Numeric data 
+2- String Data Type 
+3- Date and time data type 
+
+-----------------------------------------------------------------------
+
+Signed and Unsigned
+
+>> An Unsigned data type can not be negative but has twice as large a range than positive integers.
+>> A signed data type can have negative value.
+
+>> the types TINYINT, SMALLINT, MEDIUMINT, INT and BIGINT all have signed and unsigned versions.
+
+type           Storage             Min           max  
+INT               4          -2147483648      2147483648
+INT  Unsigned     4                0          2147483648
+
+
+--------------------------------------------------------------------------
+
+Numeric Data Types 
+
+>> INT 
+    Normal Sized Integer, Width upto 11 digits. 
+>> TINYINT 
+    very small integers. 0-255 and a width upto 4 digits. Synonym for Boolean.
+>> SMALLINT 
+     Width of 5 digits.
+>>  MEDIUMINT 
+    width of 9 digits.
+>> BIGINT 
+    upto 20 digits.
+>> FLOAT 
+    Floating point numbers, can define length and number of decimals.
+>> DOUBLE 
+    Double Precision floating point number.
+>> DECIMAL 
+    Unpacked Floating point numbers.
+
+
+----------------------------------------------------------------------------------
+String Data Types.
+
+>> CHAR 
+    A fixed length string, 1-255 characters in length not required to specify a length, default to one.
+>> VARCHAR
+    Variable length between 1 to 255 chars. Must have a defines length.
+>> BLOB or TEXT.
+    Max length of 65535 characters.BLOBs can store large binary data like images, but storing images in database is not good suggestion.
+>> TINYBLOB or TINYTEXT.
+    Max Length of 255
+>> MEDIUMBLOB or MEDIUMTEXT
+    max length of 16777215
+>> LONGBLOB or LONGTEXT
+    max length of 4294967295
+>> ENUM 
+    an enumeration which is basically a list.used to create a list of items for which a value must be selected.
+-----------------------------------------------------------------------------------
+
+DATE and TIMES types.
+>> DATE
+    a date in yyyy-mm-dd format, september 10th 1981 would be stored as 1981-09-10
+>> DATETIME 
+    format is yyyy-mm-dd hh:mm:ss 
+>> TIMESTAMP
+>> TIMES
+    stores the time in hh:mm:ss
+>> YEAR
+    Stores an year in 2-digits or 4-digits 
