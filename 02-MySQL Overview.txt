@@ -1,0 +1,84 @@
+What is MySQL?
+MySQL is A DBMS
+
+MySQL is a popular open source relational database that is powerfull, reliable and scalable.
+    MySQL can be integrated with web application written in different languages like PHP, Ruby and Rails etc. 
+
+>> created in 1995,
+>> Open Source and uses the GNU general public licence,
+>> Now owned by oracle corporation
+>> Used with the extremely popular LAMP web software stack(Linux, Apache, MySQL, PHP)
+
+-----------------------------------------------------------------------
+MySQL Features 
+
+Here are some of the powerfull features of MySQL 
+>> Complete Foreign Key Support 
+   (MySQL Uses different storage engines, foreign kkey supports means if we have two table 1-user and 2- blogpost, if we delete user table all of its blogpost will also be deleted. that's called cascading. we can change the settings. Blogpost can also be remain same even if we delete the user table,)
+>> Triggers
+   (trigger is a name database object that is associated with the tables and activated when a particular event occure with the table. some use triggers to check the value which are being inserted and used it to perform calculation on different values.)
+>> Stored Procedures 
+>> Full Text Indexing and Searching 
+   (full text indexing allows us to run full text queries against the character based data in SQL server table. and we can use search and filter functionality in our web servers. Before we run a full text query on the table we have to create the full text index on the table.)
+>> Query Caching
+>> Replucation
+>> Security
+>> Seamless Integration with PHP and Other Languages.
+
+------------------------------------------------------------------------
+
+Platforms
+
+MySQL is availabale on 12 different platforms.
+>> Windows
+>> Linux 
+>> Mac OSX
+>> Novell Netware
+>> Free BSD 
+>> Open BSD 
+>> Solaris 
+>> HP-UX 
+>> IBM AIX 
+>> QNX 
+>> SGI IRIX 
+>> DEC OSF 
+
+----------------------------------------------------------------
+Applications that use MySQL 
+
+MySQL is used by many Open Source applications.\
+>> Joomla 
+>> Wordpree 
+>> Drupal 
+>> TYPO3 
+>> phpBB 
+>> Modx 
+
+
+--------------------------------------------------------------
+MySQL editions.
+there are a few different editions vary in price and support 
+>> community edition 
+>> standard editions 
+>> Enterprise edition 
+>> cluster carrier grade edition
+
+visit 
+mysql.com/products/
+
+--------------------------------------------------------------------
+
+Client/Server Architecture 
+
+MySQl uses a client/server modal with 3 general program categories
+
+1- The Server --mysqld
+    is a program that manages the database and tables it is the on;ly program that touches the actual database 
+2- Clients - 
+   A client is a program that you can use to communicate with the MySQL Server (mysqld). there are many to choose from in both command line and GUI.
+3- Utilities-
+   usuallu used for special purpose. An example is mysqld_safe which starts up and monitor the server.
+
+
+
+
