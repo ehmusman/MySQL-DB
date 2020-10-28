@@ -1,0 +1,12 @@
+there are following 7 chepters in this course
+
+> ch 1  Introduction
+> ch 2 Getting started
+> ch 3 Planning and design
+> ch 4 creating a database
+> ch 5 SQL basis 
+> ch 6 advanced SQL
+> ch 7 PHP & MySQL
+
+each chapter include three to five section including theory and code videos
+
