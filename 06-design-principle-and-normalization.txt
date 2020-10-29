@@ -1,0 +1,43 @@
+Relational Model Rules 
+
+Each column value must be a single value only.
+All values for a given column must be of the same data type.
+Each column name must be unique.
+The order of columns is insignificant
+No two rows in a relation can be identical.
+The order of the rows is insignificant.
+
+---------------------------------------------------------------------
+
+Functional Dependency
+
+A Functional Dependency describes a relationship between columns within a single relation.
+
+A column is dependent on another if one value can be used to determine the value of another.
+
+Example: first_name is functionally dependent on id because id can be used to uniquely determine the value of first_name
+
+
+------------------------------------------------------------------
+COMMON DESIGN MISTAKES
+
+Tables with too many fields or with fields that do not relate to each other
+Too many tables with similar data
+Repeated rows
+Using comma separated values or multiple values in a single row 
+Poor naming conventions
+Poor or no planning
+Non-Normalized data
+
+---------------------------------------------------------------------
+
+DATABASE NORMALIZATION
+
+Normalization is the process of organizing the fields and tables of a relational database to minimize redundancy and dependency
+
+This can involve dividing larger tables into smaller tables and defining relationships between them. 
+
+The objective is to isolate data so that actions in a field can be made in one table and then propagated through the rest of the needed tables using properly defined relationships.
+
+-------------------------------------------------------------------
+
