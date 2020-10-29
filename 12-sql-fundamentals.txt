@@ -1,1 +1,3 @@
 sql fundamentals started
+in this we'll learn about inserting the data using sql in our data base.
+we can do this  using phpmyadmin or another tool. but  we'll know about the fundamentlsa of using the command line.
