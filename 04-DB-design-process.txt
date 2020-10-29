@@ -1,11 +1,68 @@
 Design Process 
 
-Normalization is the process of organizing the fields and tables of a relational database to minimize redundancy and dependency
-
-This can involve dividing larger tables into smaller tables and defining relationships between them. 
-
-The objective is to isolate data so that actions in a field can be made in one table and then propagated through the rest of the needed tables using properly defined relationships.
+All developers should have some kind or process when creating a database/application structure, especially with relational databases. Processes may vary depending on the developer. .
 
 
 -----------------------------------------------------------------------------
+
+Step one: Define Your Purpose
+
+The first step is to define the purpose of your database and the application(s) that will use it
+
+Our purpose is pretty simple. We want to create a database for an application/website that will 
+
+Sell products which can be categorized
+Create customer accounts
+Allow customers to create reviews for products
+Provide a basic content management system for static pages
+
+-------------------------------------------------------------------------------
+
+
+Step Two: Determine Your Table.
+
+Once we figure out our purpose and what kinds of tasks we need to do, we can divide our information up into tables. You should follow a naming convention in your table structure.
+
+Going by the defining process, we know we need the following tables…
+
+    product_categories
+    products
+    customers
+    reviews
+    page_categories
+    pages
+---------------------------------------------------------------------------
+
+Step Three: Determining Your Fields 
+
+Your tables need fields. First decide which information you want to save, then decide which table it should be placed in
+
+Your tables need fields. First decide which information you want to save, then decide which table it should be placed in
+
+This step also includes choosing data types. We will map out our full structure in the next video
+
+----------------------------------------------------------------------------
+
+Step Four: Determining Your Relationships
+
+In this step, we need to look at our table data and figure out which tables can relate to another
+
+A good example is in our “reviews” table, we have a “customer” field. This field will relate to the “id” field in the “customers” table
+
+
+------------------------------------------------------------------
+
+Step Five: Create a diagram 
+
+Now that you have your data structure figured out, transfer it from a messy notepad file to a neat diagram or some other physical representation of the schema using software like MySQL Workbench or Dia Diagram Editor
+
+
+-----------------------------------------------------------------------
+
+
+Step Six: Refine If Needed
+
+In step five you want to take a step back and really look at your data structure and make any additions or changes needed
+
+Don’t get worried if you forgot some things or made any errors. Your initial design is like a rough draft. You can improve things as your application grows.
 
