@@ -1,0 +1,5 @@
+junction table is actually is the relation of one or more things witn one or more things. like a single customer can buy more than one products and one product can be sold out to more than one customers. 
+this is many to many relation.
+on the other hand
+a product category may have more than one products while one product can not have more than one product categories
+this is one to many and many to one relation
