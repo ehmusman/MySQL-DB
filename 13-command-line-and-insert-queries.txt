@@ -1,0 +1,211 @@
+Database sql  commands 
+
+>> create database database_name
+>> create database shop
+
+-----------------------------------------
+
+>> show databases;
+
+to show all db's 
+
+----------------------------------------------
+select the desird DB 
+>> use database_name 
+it will select the specific DB 
+use shop 
+---------------------------------------
+
+we can show  tables using command lines 
+
+>> show tables 
+
+empty set (at start this will show )
+
+------------------------------------------
+how to make tables?
+
+>>CREATE TABLES table_name ( table_field1 data_type(count) , table_field1 data_type(count) )
+    in my case  
+
+>> CREATE TABLES test_table1 (field1 VARCHAR(20) , field2 VARCHAR(20)
+
+
+>> CREATE TABLE guest (id INT(11) not null auto_increment primary key,  first_name VARCHAR(100), last_name VARCHAR(100), email VARCHAR(150), description TEXT, arriving_date TIMESTAMP);
+----------------------------------------------------------
+
+Entering data in the tables.
+Syntax:
+
+INSERT INTO  table_name 
+VALUES(1,"usman","bakhsh")
+
+here the problem is that we want id as auto increment 
+so we'll use the following suntax 
+
+INSERT INTO table_name (first_name, last_name)
+VALUES ("Usman","Bakhsh")
+
+i am going to insert data in the customers table.
+
+
+>>INSERT INTO customers (first_name, last_name, email, password, avatar)
+    VALUES("farooq", "bakhsh", "farooq@gmail.com", 1234, "images/farooq.jpeg");
+>> INSERT INTO customers (first_name, last_name, email, password, avatar)
+    VALUES("usman", "bakhsh", "ehmusman@gmail.com", 1234, "images/usman.jpeg");
+
+ 
+
+
+("apple","it used apple","99",2,"images/apple"),
+("banana","it used banana","99",2,"images/banana"),
+("pokemon","it used pokemon","99",3,"images/pokemon"),
+("electric car","it used electric car","99",3,"images/electriccar"),
+("red-shirt","it used red-shirt","99",4,"images/red-shirt"),
+("black-shirt","it used black-shirt","99",4,"images/black-shirt"),
+("long","it used long","99",5,"images/long"),
+("short","it used short","99",5,"images/short"),
+("medium","it used medium","99",5,"images/medium"),
+("canvass-cloth","it used canvass-cloth","99",6,"images/canvass-cloth"),
+("cotton-fabric","it used cotton-fabric","99",6,"images/cotton-fabric"),
+("polyster","it used polyster","99",6,"images/polyster"),
+("bunyan","it used bunyan","99",7,"images/bunyan"),
+("underware","it used underware","99",7,"images/underware"),
+("soft-footbal","it used soft-footbal","99",8,"images/soft-footbal"),
+("hard-ball","it used hard-ball","99",8,"images/hard-ball"),
+
+
+INSERT INTO `products`
+(name, description, price,category,image)
+VALUES
+("android","it used android based OS","99",1,"images/android"),
+("Tablet","it used android based OS","99",1,"images/tablet"),
+("android","it used android based OS","99",1,"images/android"),
+("apple","it used apple","99",2,"images/apple"),
+("banana","it used banana","99",2,"images/banana"),
+("pokemon","it used pokemon","99",3,"images/pokemon"),
+("electric car","it used electric car","99",3,"images/electriccar"),
+("red-shirt","it used red-shirt","99",4,"images/red-shirt"),
+("black-shirt","it used black-shirt","99",4,"images/black-shirt"),
+("long","it used long","99",5,"images/long"),
+("short","it used short","99",5,"images/short"),
+("medium","it used medium","99",5,"images/medium"),
+("canvass-cloth","it used canvass-cloth","99",6,"images/canvass-cloth"),
+("cotton-fabric","it used cotton-fabric","99",6,"images/cotton-fabric"),
+("polyster","it used polyster","99",6,"images/polyster"),
+("bunyan","it used bunyan","99",7,"images/bunyan"),
+("underware","it used underware","99",7,"images/underware"),
+("soft-footbal","it used soft-footbal","99",8,"images/soft-footbal"),
+("hard-ball","it used hard-ball","99",8,"images/hard-ball")
+
+
+
+
+INSERT INTO `customers`
+(first_name, last_name,email,password,avatar)
+VALUES
+("fname-1","lname-1","email-1","123456","images/avatar-1"),
+("fname-2","lname-2","email-2","123456","images/avatar-2"),
+("fname-3","lname-3","email-3","123456","images/avatar-3"),
+("fname-4","lname-4","email-4","123456","images/avatar-4"),
+("fname-5","lname-5","email-5","123456","images/avatar-5"),
+("fname-6","lname-6","email-6","123456","images/avatar-6"),
+("fname-7","lname-7","email-7","123456","images/avatar-7"),
+("fname-8","lname-8","email-8","123456","images/avatar-8"),
+("fname-9","lname-9","email-9","123456","images/avatar-9"),
+("fname-10","lname-10","email-10","123456","images/avatar-10"),
+("fname-11","lname-11","email-11","123456","images/avatar-11"),
+("fname-12","lname-12","email-12","123456","images/avatar-12"),
+("fname-13","lname-13","email-13","123456","images/avatar-13"),
+("fname-14","lname-14","email-14","123456","images/avatar-14"),
+("fname-15","lname-15","email-15","123456","images/avatar-15"),
+("fname-16","lname-16","email-16","123456","images/avatar-16"),
+("fname-17","lname-17","email-17","123456","images/avatar-17"),
+("fname-18","lname-18","email-18","123456","images/avatar-18"),
+("fname-19","lname-19","email-19","123456","images/avatar-19"),
+("fname-20","lname-20","email-20","123456","images/avatar-20"),
+("fname-21","lname-21","email-21","123456","images/avatar-21")
+
+
+
+
+
+INSERT INTO `customer_address`
+(customer, address,address2,city,state,zipcode)
+VALUES
+(1 ,"address-1","address2-1","city-1","state-1","zipcode-1"),
+(2 ,"address-2","address2-2","city-2","state-2","zipcode-2"),
+(3 ,"address-3","address2-3","city-3","state-3","zipcode-3"),
+(4 ,"address-4","address2-4","city-4","state-4","zipcode-4"),
+(5 ,"address-5","address2-5","city-5","state-5","zipcode-5"),
+(6 ,"address-6","address2-6","city-6","state-6","zipcode-6"),
+(7 ,"address-7","address2-7","city-7","state-7","zipcode-7"),
+(8 ,"address-8","address2-8","city-8","state-8","zipcode-8"),
+(9 ,"address-9","address2-9","city-9","state-9","zipcode-9"),
+(10 ,"address-10","address2-10","city-10","state-10","zipcode-10"),
+(11 ,"address-11","address2-11","city-11","state-11","zipcode-11"),
+(12 ,"address-12","address2-12","city-12","state-12","zipcode-12"),
+(13 ,"address-13","address2-13","city-13","state-13","zipcode-13"),
+(14 ,"address-14","address2-14","city-14","state-14","zipcode-14"),
+(15 ,"address-15","address2-15","city-15","state-15","zipcode-15"),
+(16 ,"address-16","address2-16","city-16","state-16","zipcode-16"),
+(17 ,"address-17","address2-17","city-17","state-17","zipcode-17"),
+(18 ,"address-18","address2-18","city-18","state-18","zipcode-18"),
+(19 ,"address-19","address2-19","city-19","state-19","zipcode-19"),
+(20 ,"address-20","address2-20","city-20","state-20","zipcode-20"),
+(21 ,"address-21","address2-21","city-21","state-21","zipcode-21")
+
+
+
+
+
+
+
+INSERT INTO `page_categories`
+(name, description, image)
+VALUES
+("name-1","description-1","image/avatar-1"),
+("name-2","description-2","image/avatar-2"),
+("name-3","description-3","image/avatar-3"),
+("name-4","description-4","image/avatar-4"),
+("name-5","description-5","image/avatar-5"),
+("name-6","description-6","image/avatar-6"),
+("name-7","description-7","image/avatar-7"),
+("name-9","description-"9,"image/avatar-"9),
+("name-10","description-10","image/avatar-10"),
+("name-11","description-11","image/avatar-11"),
+("name-12","description-12","image/avatar-12"),
+("name-13","description-13","image/avatar-13"),
+("name-14","description-14","image/avatar-14"),
+("name-15","description-15","image/avatar-15"),
+
+
+
+INSERT INTO `pages`
+(title,body,category)
+VALUES
+("title-1","body description-1",1),
+("title-2","body description-2",2),
+("title-3","body description-3",3),
+("title-4","body description-4",4),
+("title-5","body description-5",5),
+("title-6","body description-6",6),
+("title-7","body description-7",7),
+("title-8","body description-8",8),
+("title-9","body description-9",9),
+("title-10","body description-10",10),
+("title-11","body description-11",11),
+("title-12","body description-12",12),
+("title-13","body description-13",13),
+("title-14","body description-14",14),
+("title-15","body description-15",15)
+
+INSERT INTO `reviews`
+(title,body,rating,customer,product)
+VALUES
+("Good Product","this product is amazing",9,2,12),
+("Good Product","this product is amazing",8,2,3),
+("Good Product","this product is amazing",8,4,6),
+("Good Product","this product is amazing",7,5,6),
+("Good Product","this product is amazing",6,9,9)
+
