@@ -12,3 +12,89 @@ then check in phpmyadmin, the unit has been changed.
 
 we can also use letters in lower case 
 >> alter table products modify price decimal;
+
+
+--------------------------------------------------
+how to select data from a table ??
+
+syntax:
+>> SELECT field_name1,field_name2  FROM database ;
+>> SELECT field_name1,field_name2  FROM tablename;
+
+if we want to select everything from the table, than use following.
+>> SELECT *  FROM database/tablename 
+
+>> SELECT first_name from customers;
+>> SELECT name from products;
+
+select more than one things
+
+>> SELECT name,price,category from products;
+
+----------------------------------------------------------
+
+select with condition
+ 
+>> SELECT city from customer_address where id=3;
+
+
+selection criteria may be changed 
+-----
+>> SELECT email from customers where first_name = "fname-4";
+-----------
+>> SELECT description from products where price = 99;
+>> SELECT description from products where price >= 99;
+>> SELECT description from products where price <= 99;
+>> SELECT description from products where price >= 200;
+
+
+---------
+
+>> SELECT * from products where  name like 'tablet%';
+
+
+-------------
+
+select every name starts with "s"
+>> SELECT * from products where  name like 's%';
+
+'s%'  its means search the word starts with s 
+'%s'  its means search the word ends with s 
+'%s%' its means select the exact word s.
+
+the last one is very helpfull. what the user enter is a variable and take it between the percentage signs and after hitting search show the result to user,
+
+
+----------------------------------------------------------------------
+
+Conditional select. 
+using (this and/or that)
+logic gates.
+ 
+
+
+>> SELECT * from products where  category = 5 && price < 80;
+here &&===AND 
+||===OR 
+
+
+
+Ordering the output according to name.
+>> SELECT * from products where  category = 5 || category = 1 AND price < 80 order by name;
+order in reverse order
+>> SELECT * from products where  category = 5 || category = 1 AND price < 80 order by name DESC;
+here default is ASC=ascending.
+
+
+
+order by category 
+>> SELECT * from products where  category = 5 || category = 1 AND price < 80 order by category;
+in reverse order 
+
+
+to limit the output to some extent.
+>> SELECT * from products where  category = 5 || category = 1 AND price < 80 order by category desc limit 1,3;
+
+start from 1 and take next 3 numbers.
+if 2,3
+then start from 2 and select next 3.
