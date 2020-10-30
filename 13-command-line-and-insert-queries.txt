@@ -1,0 +1,58 @@
+Database sql  commands 
+
+>> create database database_name
+>> create database shop
+
+-----------------------------------------
+
+>> show databases;
+
+to show all db's 
+
+----------------------------------------------
+select the desird DB 
+>> use database_name 
+it will select the specific DB 
+use shop 
+---------------------------------------
+
+we can show  tables using command lines 
+
+>> show tables 
+
+empty set (at start this will show )
+
+------------------------------------------
+how to make tables?
+
+>>CREATE TABLES table_name ( table_field1 data_type(count) , table_field1 data_type(count) )
+    in my case  
+
+>> CREATE TABLES test_table1 (field1 VARCHAR(20) , field2 VARCHAR(20)
+
+
+>> CREATE TABLE guest (id INT(11) not null auto_increment primary key,  first_name VARCHAR(100), last_name VARCHAR(100), email VARCHAR(150), description TEXT, arriving_date TIMESTAMP);
+----------------------------------------------------------
+
+Entering data in the tables.
+Syntax:
+
+INSERT INTO  table_name 
+VALUES(1,"usman","bakhsh")
+
+here the problem is that we want id as auto increment 
+so we'll use the following suntax 
+
+INSERT INTO table_name (first_name, last_name)
+VALUES ("Usman","Bakhsh")
+
+i am going to insert data in the customers table.
+
+
+>>INSERT INTO customers (first_name, last_name, email, password, avatar)
+    VALUES("farooq", "bakhsh", "farooq@gmail.com", 1234, "images/farooq.jpeg");
+>> INSERT INTO customers (first_name, last_name, email, password, avatar)
+    VALUES("usman", "bakhsh", "ehmusman@gmail.com", 1234, "images/usman.jpeg");
+
+ 
+
