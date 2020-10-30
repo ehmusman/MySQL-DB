@@ -1,3 +1,20 @@
 sql fundamentals started
 in this we'll learn about inserting the data using sql in our data base.
 we can do this  using phpmyadmin or another tool. but  we'll know about the fundamentlsa of using the command line.
+
+important alias commands which i made to check the status of LAMP server 
+
+
+###Aliases
+alias clc = "clear"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
+alias apache-stop="sudo apachectl stop"
+alias apache-start="sudo apachectl start"
+alias apache-status="service apache2 status"
+alias apache-restart="service apache2 restart"
+alias mysql-status="mysqladmin -u root -p status"
+alias mysql-restart="sudo service mysql restart"
+alias mysql-start="sudo service mysql start"
+alias mysql-stop="sudo service mysql stop"
+
