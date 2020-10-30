@@ -1,0 +1,14 @@
+we want to change the data type of price in store>product 
+its initially VARCHAR
+we'll convert it to decimal.
+
+first launch the MySQL Workbench,
+select the "store" database by typing, then run the following command.
+
+
+>> ALTER TABLE products MODIFY price decimal;
+
+then check in phpmyadmin, the unit has been changed.
+
+we can also use letters in lower case 
+>> alter table products modify price decimal;
