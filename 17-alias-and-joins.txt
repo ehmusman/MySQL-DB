@@ -1,0 +1,3 @@
+alia is actually a short temporarily name. if a table has a name and we have to write the long querry than we use the alias.
+for example
+let the first name is f and last name is l and so on.
