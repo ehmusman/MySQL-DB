@@ -1,1 +1,24 @@
 for updating and deleting a file we have to check it with dual checks. like we may put a condition on a value to check its name as well as its foreign. this dual check will help us to exactly target on the item which we want.
+
+syntax to update an item.
+
+>>UPDATE products SET name = "our Required Name"  WHERE id=3;
+
+before "WHERE" the thing is which we want to do. and after the "WHERE" there is a condition bt which we'll select the targetted element.
+
+>> UPDATE products SET name = "Red Apple" WHERE id =3 AND category = 2 and name = "apple"
+ i applied three conditions for error free output.
+
+ how to update more than one fields at a time?
+
+ >> update customers set first_name='anas',last_name='ameen',email='anas@gmail.com' where id=5
+
+ ---------------------------------------------------
+
+
+ Delete something.
+
+ syntax
+ >> DELETE FROM table-name WHERE condition;
+
+ >> DELETE FROM `customer_address` WHERE CUSTOMER=16
