@@ -1,0 +1,1 @@
+for updating and deleting a file we have to check it with dual checks. like we may put a condition on a value to check its name as well as its foreign. this dual check will help us to exactly target on the item which we want.
