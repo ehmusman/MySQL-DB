@@ -1,3 +1,63 @@
 alia is actually a short temporarily name. if a table has a name and we have to write the long querry than we use the alias.
 for example
-let the first name is f and last name is l and so on.
+let the first name is f and last name is l and so on.   
+syntax:
+
+>>SELECT first_name AS "First Name", last_name AS "Last Name" FROM customers;
+these are column aliases,
+
+empty space between the name requires a double quotes around the name.
+
+---------------------------------------
+how to make table aliases?
+
+
+
+
+
+combine selection and aliases of tables and columns 
+here i am selecting the product whose name is android.
+>> SELECT p.name AS "Product Name", pc.name AS "Product Category",p.price AS "Product Price"
+FROM products AS p, product_categories AS pc
+WHERE p.name = "android" AND p.id=pc.id
+
+
+here i am selecting all the products with their specific name , category and price 
+
+>> SELECT p.name AS "Product Name", pc.name AS "Product Category",p.price AS "Product Price"
+FROM products AS p, product_categories AS pc
+WHERE p.id=pc.id
+
+
+
+ordered products 
+>> SELECT p.name AS "Product Name", pc.name AS "Product Category",p.price AS "Product Price"
+FROM products AS p, product_categories AS pc
+WHERE p.id=pc.id
+ORDER BY pc.name
+
+
+-----------------------------------------------------------------------
+
+                            JOINS 
+
+types of joins.
+>> inner join (is the most popular and extremely used)
+>> LEFT JOIN.
+>> RIGHT JOIN.
+>> OUTER JOIN 
+>> LEFT JOIN EXCLUDING INNER JOIN (excluding means opposite of aboves)
+>> RIGHT JOIN EXCLUDING INNER JOIN 
+>> OUTER JOIN EXCLUDING INNER JOIN.
+
+helping material 
+>> https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins
+
+-------------------------------
+inner join 
+
+>> SELECT customers.first_name,customers.last_name,customer_address.city 
+from customers 
+inner join customer_address
+on customers.id=customer_address.customer;
+
